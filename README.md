@@ -1,3 +1,7 @@
+Sure! Here's your updated `README.md` with a **"To Be Added"** section mentioning the logout functionality:
+
+---
+
 # IntervBit
 
 > An AI‑powered platform for practicing job interviews in real time.
@@ -7,28 +11,28 @@ IntervBit  helps you sharpen your interview skills through live, AI‑driven voi
 ## Features
 
 - **Real‑Time AI Voice Interviews**  
-  Conduct a live, voice‑based interview with an AI interviewer powered by OpenAI’s GPT‑4, Deepgram for transcription, and 11labs for speech synthesis citeturn15view0turn13view0  
+  Conduct a live, voice‑based interview with an AI interviewer powered by OpenAI’s GPT‑4, Deepgram for transcription, and 11labs for speech synthesis.  
 - **Automatic Feedback Generation**  
-  After each interview, receive structured feedback across multiple categories (Communication, Technical Knowledge, Problem Solving, Cultural Fit, Confidence) via a Firebase‑backed workflow citeturn15view0turn9view0  
+  After each interview, receive structured feedback across multiple categories (Communication, Technical Knowledge, Problem Solving, Cultural Fit, Confidence).  
 - **User Authentication & Data Persistence**  
-  Sign up or log in with Firebase Authentication; interview transcripts and feedback are stored securely in Firestore citeturn10view0turn9view0  
+  Sign up or log in with Firebase Authentication; interview transcripts and feedback are stored securely in Firestore.  
 - **Customizable Interview Templates**  
-  Define your own question flows or choose from preset templates; support for various roles, experience levels, and tech stacks citeturn15view0  
+  Define your own question flows or choose from preset templates; support for various roles, experience levels, and tech stacks.  
 - **Modern UI/UX**  
-  Responsive design using Tailwind CSS animations, Radix UI components, and iconography from Lucide React citeturn4view0  
+  Responsive design using Tailwind CSS animations, Radix UI components, and iconography from Lucide React.  
 
 ## Tech Stack
 
-- **Framework**: Next.js 15 (App Router) citeturn4view0  
+- **Framework**: Next.js 15 (App Router)  
 - **Language**: TypeScript, React 19  
 - **Styling**: Tailwind CSS v4, `clsx`, `class-variance-authority`  
-- **Authentication & Database**: Firebase (Auth, Firestore) citeturn10view0turn9view0  
+- **Authentication & Database**: Firebase (Auth, Firestore)  
 - **AI & Transcription**:  
   - VAPI AI SDK (`@vapi-ai/web`) for workflow orchestration  
   - OpenAI GPT‑4 for interview logic  
   - Deepgram for speech‑to‑text  
   - 11labs for text‑to‑speech  
-- **Utilities**: `react-hook-form`, `zod` for validation, `dayjs` for date handling  
+- **Utilities**: `react-hook-form`, `zod`, `dayjs`  
 
 ## Getting Started
 
@@ -61,12 +65,7 @@ FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_KEY_CONTENT\n-----END PR
 
 # VAPI AI (Client-side)
 NEXT_PUBLIC_VAPI_WORKFLOW_ID=your_vapi_workflow_id
-
-# [Optional] If your VAPI SDK requires an API key:
-# NEXT_PUBLIC_VAPI_API_KEY=your_vapi_api_key
 ```
-
-> **Note:** The Firebase client config is already set in `firebase/client.ts` citeturn10view0. No additional vars needed for client initialization.
 
 ### Run Locally
 
@@ -76,43 +75,46 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Visit: [http://localhost:3000](http://localhost:3000)
 
 ## Usage
 
-1. **Sign Up / Log In** via the Firebase‑powered auth form.  
-2. **Create or Select** an interview template (role, tech stack, questions).  
-3. **Press “Call”** to start a live voice interview.  
-4. **Speak** your answers; the AI will react and ask follow‑ups.  
-5. **Receive Feedback** upon completion and review your scores and comments.
+1. **Sign Up / Log In** via the Firebase auth form  
+2. **Choose an interview template**  
+3. **Start a live interview** by clicking “Call”  
+4. **Speak** your responses  
+5. **Receive instant feedback** post interview  
 
 ## Deployment
 
 ### Vercel
 
-1. Push your branch to GitHub.  
-2. Import the repo in Vercel.  
-3. Set the same environment variables in your Vercel project settings.  
-4. Deploy — Vercel will handle build and release.
+- Import repo on Vercel  
+- Add environment variables  
+- Deploy with Vercel’s CI/CD  
 
-Alternatively, you can self‑host:
+Or self-host with:
 
 ```bash
 npm run build
 npm start
 ```
 
+## To Be Added
+
+- 🔒 **Logout functionality** for signed-in users  
+- 📝 Editable feedback and summary export  
+- 📊 Dashboard with historical performance and metrics  
+- 🌐 Multi-language support  
+- 📱 Mobile-first UI enhancements  
+
 ## Contributing
 
-1. Fork the repository.  
-2. Create a feature branch: `git checkout -b feature/YourFeature`.  
-3. Commit your changes and push to your fork.  
-4. Open a Pull Request detailing your changes.
+1. Fork this repo  
+2. Create a branch: `git checkout -b feature/my-feature`  
+3. Commit and push  
+4. Open a pull request
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For questions or feedback, reach out at **kumaraditya1814@gmail.com**.
+[MIT License](LICENSE)
