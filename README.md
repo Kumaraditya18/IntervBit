@@ -1,6 +1,3 @@
-Sure! Here's your updated `README.md` with a **"To Be Added"** section mentioning the logout functionality:
-
----
 
 # IntervBit
 
